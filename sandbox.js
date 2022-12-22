@@ -132,8 +132,62 @@
 //     }
 //   }
 //   let result = digitSum((digit.reduce((a, b) => a + b)) * k)
-  
+
 //   return result
 // }
 
 // superDigit(9875, 4)
+
+// const isPrime = (num) => {
+//   // boundary creates an integer (and not a float) from num
+//   // that will be the smallest value to loop through to look for prime-ness
+//   let boundary = Math.floor(Math.sqrt(num));
+
+//   // loop through from 2 to boundary, if remainder zero => num is not prime
+//   for (let i = 2; i <= boundary; i++) if (num % i === 0) return false;
+
+//   // return true AND return true if num is 2
+//   return num >= 2;
+// };
+
+// const factorial = (num) => {
+//   if (num < 0) {
+//     return "cannot be negative";
+//   } else if (num <= 1) {
+//     return 1;
+//   } else {
+//     return num * factorial(num - 1);
+//   }
+// };
+
+// console.log(factorial(4));
+
+// const factorialNew = (n) =>
+//   n < 0
+//     ? (() => {
+//         throw new TypeError("Negative numbers are not allowed!");
+//       })()
+//     : n <= 1
+//     ? 1
+//     : n * factorialNew(n - 1);
+
+// console.log(factorialNew(4));
+
+function getRandomArbitrary(min, max) {
+  return Math.floor(Math.random() * (max - min) + min);
+}
+
+const fingerTrainer = (repCount = 60) => {
+  let interval = 1000;
+
+  for (let i = 0; i < repCount; i++) {
+    setTimeout(() => {console.log(i)}, interval);
+    //console.log(i)
+  }
+};
+
+fingerTrainer(15);
+
+// setInterval(() => {
+//   getRandomArbitrary(1, 5);
+// }, 1000);
