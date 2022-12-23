@@ -173,21 +173,19 @@
 
 // console.log(factorialNew(4));
 
-function getRandomArbitrary(min, max) {
-  return Math.floor(Math.random() * (max - min) + min);
-}
+// function getRandomArbitrary(min, max) {
+//   return Math.floor(Math.random() * (max - min) + min);
+// }
 
-const fingerTrainer = (repCount = 60) => {
-  let interval = 1000;
+// const fingerTrainer = (repCount = 60) => {
+//   let interval = 1000;
 
-  for (let i = 0; i < repCount; i++) {
-    setTimeout(() => {console.log(i)}, interval);
-    //console.log(i)
-  }
-};
+//   for (let i = 0; i < repCount; i++) {
+//     setTimeout(() => {
+//       console.log(i);
+//     }, interval);
+//     //console.log(i)
+//   }
+// };
 
-fingerTrainer(15);
-
-// setInterval(() => {
-//   getRandomArbitrary(1, 5);
-// }, 1000);
+// fingerTrainer(15);
