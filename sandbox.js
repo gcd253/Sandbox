@@ -189,3 +189,12 @@
 // };
 
 // fingerTrainer(15);
+
+function countdown(count) {
+    while (count > 0) {
+        console.log(count)
+        count--
+    }
+}
+
+countdown(12)
