@@ -198,3 +198,5 @@ function countdown(count) {
 }
 
 countdown(12)
+
+// I am confused lol
